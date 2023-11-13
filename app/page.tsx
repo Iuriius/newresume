@@ -1,95 +1,55 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+import Mehero from "@/public/me-hero.jpg"
+import GoIT from "@/public/goit.png"
+import English from "@/public/logo-bridge.svg"
+import Adobe from "@/public/Adobe.svg"
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <section className='mainsection1'>
+        <Image className='bg-hero'
+          src={Mehero}
+          alt="background hero picture" />
+
+        <div className="wrapper">
+          <svg>
+            <text x="50%" y="50%" dy=".35em" textAnchor="middle">
+              Welcome
+            </text>
+          </svg>
+          <p className='hero-text'>I am a fullstack developer
+            <br />based in Bila Tserkva, Ukraine</p>
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <button className='button'>MY PROJECTS</button>
+      </section>
+      <section className='mainsection2'>
+        <h2 className='topskills-h2'>TOP SKILLS</h2>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+        <a className='topskills-link' href="https://drive.google.com/file/d/1LpYZN7ylMnzig17SMUSMQ1kTAZgl4xWG/view" target="_blank"
+          rel="noopener noreferrer">
+          <Image className='topskills-img-coding'
+            src={GoIT}
+            alt="Coding certificate" />
+          <h3 className='topskills-h3'>Coding certificate</h3> click to verify the certificate</a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+        <a className='topskills-link' href="https://bridge.edu/tefl/tools/TEFL_certificates/get_account.php?account_id=00121750"
+          target="_blank" rel="noopener noreferrer">
+          <Image className='topskills-img-english'
+            src={English}
+            alt="English certificate" />
+          <h3 className='topskills-h3'>TEFL credentials</h3> click to verify the certificate</a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+        <a className='topskills-link' href="https://www.videomontazh.online"
+          target="_blank" rel="noopener noreferrer">
+          <Image className='topskills-img-adobe'
+            src={Adobe}
+            alt="Adobe skills" />
+          <h3 className='topskills-h3'>Ps, Pr, Ae, Ai</h3>7+ years of experience</a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+
+      </section>
     </main>
   )
 }
