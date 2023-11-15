@@ -1,16 +1,27 @@
+import Link from "next/link";
 import Image from 'next/image'
 import Mehero from "@/public/me-hero.jpg"
 import GoIT from "@/public/goit.png"
 import English from "@/public/logo-bridge.svg"
 import Adobe from "@/public/Adobe.svg"
+import Technologies from "@/components/Technologies"
+import { IoLogoGithub } from "react-icons/io5";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { GoMail } from 'react-icons/go';
 
+/*
+/**|======================================
+/**| Code
+/**|======================================
+*/
 export default function Home() {
   return (
     <main>
       <section className='mainsection1'>
         <Image className='bg-hero'
           src={Mehero}
-          alt="background hero picture" />
+          alt="background hero picture"
+          priority={true} />
 
         <div className="wrapper">
           <svg>
@@ -22,8 +33,9 @@ export default function Home() {
             <br />based in Bila Tserkva, Ukraine</p>
         </div>
 
-        <button className='button'>MY PROJECTS</button>
+        <Link className='button' href={"/portfolio"}>MY PROJECTS</Link>
       </section>
+
       <section className='mainsection2'>
         <h2 className='topskills-h2'>TOP SKILLS</h2>
 
@@ -47,9 +59,28 @@ export default function Home() {
             src={Adobe}
             alt="Adobe skills" />
           <h3 className='topskills-h3'>Ps, Pr, Ae, Ai</h3>7+ years of experience</a>
-
-
       </section>
+
+      <section className='mainsection3'>
+        <h2>MY STACK</h2>
+        <Technologies />
+      </section>
+
+      <section className='mainsection2'>
+        <h2 >CONNECT</h2>
+        <div className='connect'>
+          <a className='connect-link' href="https://github.com/Iuriius" target="_blank" rel="noopener noreferrer">
+            <IoLogoGithub />
+          </a>
+          <a className='connect-link' href="https://www.linkedin.com/in/iurii-kyrychenko-393706249/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn />
+          </a>
+          <a className='connect-link' href="mailto:iuriius@gmail.com" target="_blank" rel="noopener noreferrer">
+            <GoMail />
+          </a>
+        </div>
+      </section>
+
     </main>
   )
 }
