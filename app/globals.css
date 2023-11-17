@@ -28,7 +28,7 @@ body {
   justify-items: center;
   align-content: center;
   justify-content: space-between;
-  height: 100dvh;
+  height: 100svh;
   gap: 1rem;
 }
 
@@ -44,10 +44,14 @@ body {
   align-items: center;
   gap: 1rem;
   width: 100%;
-  margin: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  background-color: aliceblue;
+  padding: 0.5rem;
+  border-radius: 7px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
+
 .logo-text {
   display: flex;
   align-items: center;
@@ -60,21 +64,25 @@ body {
     transform: scale(1.01);
   }
 }
+
 .text-hide {
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
+
 .profilepic {
   border-radius: 50%;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   margin-right: 1rem;
 }
+
 .nav {
   display: flex;
   gap: 1rem;
 }
+
 .navlink {
   text-decoration: none;
   font-weight: 900;
@@ -118,12 +126,14 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
+
 .contacts-icon {
   margin-right: 1rem;
   color: inherit;
   transition: all 200ms ease;
   width: 2rem;
 }
+
 .contacts-link {
   display: inline-flex;
   align-items: center;
@@ -133,11 +143,12 @@ body {
   transition: all 200ms ease;
   &:hover,
   &:focus {
-    filter: drop-shadow(5px 5px 20px CornflowerBlue);
+    filter: drop-shadow(0 0 25px CornflowerBlue);
     color: RoyalBlue;
     transform: scale(1.05);
   }
 }
+
 .contacts-bg {
   position: fixed;
   top: 10%;
@@ -161,6 +172,7 @@ svg {
   width: 100%;
   height: 100%;
 }
+
 svg text {
   animation: stroke 5s alternate;
   stroke-width: 1;
@@ -168,6 +180,7 @@ svg text {
   font-size: 70px;
   fill: cornflowerblue;
 }
+
 @keyframes stroke {
   0% {
     fill: CornflowerBlue;
@@ -204,13 +217,36 @@ svg text {
 .wrapper {
   position: absolute;
   top: 40%;
+  @media screen and (min-width: 768px) {
+    top: 55%;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 20%;
+    right: 10%;
+  }
 }
 
 .bg-hero {
   width: 100%;
   height: auto;
   z-index: -10;
+  border-radius: 7px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.bg-hero-desktop {
+  display: none;
+  width: 100%;
+  height: auto;
+  z-index: -10;
+  border-radius: 7px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .hero-text {
@@ -218,6 +254,10 @@ svg text {
   margin: 1.5rem 0 0 0;
   color: azure;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: xx-large;
+    margin: 0;
+  }
 }
 
 .button {
@@ -239,6 +279,18 @@ svg text {
     color: aliceblue;
     cursor: pointer;
   }
+  @media screen and (min-width: 768px) {
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: x-large;
+    transform: translateY(-170%);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: x-large;
+    transform: translateY(-320%) translateX(85%);
+  }
 }
 
 .mainsection2 {
@@ -250,6 +302,22 @@ svg text {
 
 .topskills-h2 {
   margin-top: 0;
+  @media screen and (min-width: 768px) {
+    font-size: xx-large;
+    margin: 2rem 0 4rem 0;
+  }
+}
+
+.topskills-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: cornflowerblue;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 5rem;
+  }
 }
 
 .topskills-link {
@@ -261,11 +329,14 @@ svg text {
   &:focus {
     color: royalblue;
     & .topskills-img-english,
-    .topskills-img-coding,
-    .topskills-img-adobe {
+    & .topskills-img-coding,
+    & .topskills-img-adobe {
       transition: all 200ms ease;
       background-color: royalblue;
     }
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 3rem;
   }
 }
 
@@ -298,8 +369,12 @@ svg text {
   flex-direction: column;
   align-items: center;
   color: cornflowerblue;
+  border-radius: 7px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   background-color: aliceblue;
+  @media screen and (min-width: 768px) {
+    margin-top: 2rem;
+  }
 }
 
 .my-stack {
@@ -309,6 +384,18 @@ svg text {
   gap: 1rem;
   align-content: center;
   justify-content: center;
+  padding-bottom: 2rem;
+  @media screen and (min-width: 768px) {
+    gap: 4rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.my-stack-h2 {
+  @media screen and (min-width: 768px) {
+    font-size: xx-large;
+    margin: 4rem 0 4rem 0;
+  }
 }
 
 .my-stack-pic {
@@ -318,8 +405,14 @@ svg text {
   transition: all 200ms ease;
   &:hover,
   &:focus {
-    filter: drop-shadow(5px 5px 20px CornflowerBlue);
+    filter: drop-shadow(0px 0px 25px CornflowerBlue);
     transform: scale(1.05);
+  }
+  @media screen and (min-width: 768px) {
+    width: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 80px;
   }
 }
 
@@ -329,6 +422,19 @@ svg text {
   align-content: center;
   gap: 3rem;
   padding: 1rem;
+  @media screen and (min-width: 768px) {
+    gap: 4rem;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 5rem;
+  }
+}
+
+.connect-h2 {
+  @media screen and (min-width: 768px) {
+    font-size: xx-large;
+    margin-top: 4rem;
+  }
 }
 
 .connect-link {
@@ -337,7 +443,105 @@ svg text {
   color: royalblue;
   &:focus,
   &:hover {
-    filter: drop-shadow(5px 5px 20px CornflowerBlue);
+    filter: drop-shadow(0 0 25px CornflowerBlue);
     transform: scale(1.05);
   }
+  @media screen and (min-width: 768px) {
+    width: 4rem;
+  }
+}
+
+.portfolio-h2 {
+  color: cornflowerblue;
+  @media screen and (min-width: 768px) {
+    font-size: xx-large;
+    margin-top: 4rem;
+  }
+}
+
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: cornflowerblue;
+  border-radius: 7px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: LightSteelBlue;
+  padding: 0.5rem;
+  @media screen and (min-width: 768px) {
+  }
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: snow;
+  border-radius: 7px;
+  margin-bottom: 1rem;
+}
+
+.portfolio-title-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  color: inherit;
+  &:hover,
+  &:focus {
+    color: royalblue;
+    > .portfolio-pic1 {
+      transform: scale(1.03);
+    }
+  }
+}
+
+.portfolio-pic1 {
+  width: 290px;
+  height: auto;
+  border-radius: 7px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.portfolio-pic2 {
+  display: none;
+  width: 320px;
+  height: auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 7px;
+}
+
+.portfolio-title {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.portfolio-logo {
+  margin-right: 0.5rem;
+}
+
+.portfolio-h3 {
+  margin: 0;
+}
+
+.portfolio-h4 {
+  margin: 0;
+}
+
+.portfolio-p {
+  margin: 0;
+  padding: 1rem;
 }

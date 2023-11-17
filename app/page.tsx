@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from 'next/image'
 import Mehero from "@/public/me-hero.jpg"
+import Meherodesk from "@/public/Metech.jpg"
 import GoIT from "@/public/goit.png"
 import English from "@/public/logo-bridge.svg"
 import Adobe from "@/public/Adobe.svg"
@@ -22,6 +23,10 @@ export default function Home() {
           src={Mehero}
           alt="background hero picture"
           priority={true} />
+        <Image className='bg-hero-desktop'
+          src={Meherodesk}
+          alt="background hero picture"
+          priority={true} />
 
         <div className="wrapper">
           <svg>
@@ -38,36 +43,37 @@ export default function Home() {
 
       <section className='mainsection2'>
         <h2 className='topskills-h2'>TOP SKILLS</h2>
+        <div className="topskills-wrapper">
+          <a className='topskills-link' href="https://drive.google.com/file/d/1LpYZN7ylMnzig17SMUSMQ1kTAZgl4xWG/view" target="_blank"
+            rel="noopener noreferrer">
+            <Image className='topskills-img-coding'
+              src={GoIT}
+              alt="Coding certificate" />
+            <h3 className='topskills-h3'>Coding certificate</h3> click to verify the certificate</a>
 
-        <a className='topskills-link' href="https://drive.google.com/file/d/1LpYZN7ylMnzig17SMUSMQ1kTAZgl4xWG/view" target="_blank"
-          rel="noopener noreferrer">
-          <Image className='topskills-img-coding'
-            src={GoIT}
-            alt="Coding certificate" />
-          <h3 className='topskills-h3'>Coding certificate</h3> click to verify the certificate</a>
+          <a className='topskills-link' href="https://bridge.edu/tefl/tools/TEFL_certificates/get_account.php?account_id=00121750"
+            target="_blank" rel="noopener noreferrer">
+            <Image className='topskills-img-english'
+              src={English}
+              alt="English certificate" />
+            <h3 className='topskills-h3'>TEFL credentials</h3> click to verify the certificate</a>
 
-        <a className='topskills-link' href="https://bridge.edu/tefl/tools/TEFL_certificates/get_account.php?account_id=00121750"
-          target="_blank" rel="noopener noreferrer">
-          <Image className='topskills-img-english'
-            src={English}
-            alt="English certificate" />
-          <h3 className='topskills-h3'>TEFL credentials</h3> click to verify the certificate</a>
-
-        <a className='topskills-link' href="https://www.videomontazh.online"
-          target="_blank" rel="noopener noreferrer">
-          <Image className='topskills-img-adobe'
-            src={Adobe}
-            alt="Adobe skills" />
-          <h3 className='topskills-h3'>Ps, Pr, Ae, Ai</h3>7+ years of experience</a>
+          <a className='topskills-link' href="https://www.videomontazh.online"
+            target="_blank" rel="noopener noreferrer">
+            <Image className='topskills-img-adobe'
+              src={Adobe}
+              alt="Adobe skills" />
+            <h3 className='topskills-h3'>Ps, Pr, Ae, Ai</h3>7+ years of experience</a>
+        </div>
       </section>
 
       <section className='mainsection3'>
-        <h2>MY STACK</h2>
+        <h2 className="my-stack-h2">MY STACK</h2>
         <Technologies />
       </section>
 
       <section className='mainsection2'>
-        <h2 >CONNECT</h2>
+        <h2 className="connect-h2">CONNECT</h2>
         <div className='connect'>
           <a className='connect-link' href="https://github.com/Iuriius" target="_blank" rel="noopener noreferrer">
             <IoLogoGithub />
