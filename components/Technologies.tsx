@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 /*
 /**|======================================
 /**| pics
@@ -29,7 +29,7 @@ import Mui from "@/public/mui.png";
 export default function Technologies() {
   return (
     <>
-      <div className='my-stack'>
+      <div className="my-stack">
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
           <Image className="my-stack-pic" alt="pic" src={Html} />
         </a>
