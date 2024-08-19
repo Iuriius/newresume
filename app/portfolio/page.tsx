@@ -43,7 +43,7 @@ export default function Portfolio() {
                         </div>
                         <h4 className="portfolio-h4">Get legal help</h4>
                     </a>
-                    <p className="portfolio-p">Unicase is a fast, adaptive web application built with Next.js, designed to provide comprehensive information about lawyers based in Kyiv, Ukraine. The site features a sleek and professional frontend, integrates Google Analytics for insights, and offers a seamless user experience as a Single Page Application (SPA) with Server-Side Rendering (SSR). Users can easily navigate the site to find legal help from professionals, explore an integrated map, and access all the necessary links and resources.</p>
+                    <p className="portfolio-p">AO Unicase is a fast, adaptive web application built with Next.js, designed to provide comprehensive information about lawyers based in Kyiv, Ukraine. The site features a sleek and professional frontend, integrates Google Analytics for insights, and offers a seamless user experience as a Single Page Application (SPA) with Server-Side Rendering (SSR). Users can easily navigate the site to find legal help from professionals, explore an integrated map, and access all the necessary links and resources.</p>
                 </div>
 
                 <div className="portfolio-card">
