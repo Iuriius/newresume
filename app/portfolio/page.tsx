@@ -4,6 +4,9 @@ import Image from "next/image"
 /**| images
 /**|======================================
 */
+import Aounicase1 from "@/public/portfolio-aounicase.jpg"
+import Aounicase2 from "@/public/aounicase.jpg"
+import Gavellogo from "@/public/gavellogo.png"
 import Videoeditor1 from "@/public/portfolio-videoeditor.jpg"
 import Videoeditor2 from "@/public/videoeditor.jpg"
 import Videologo from "@/public/videologo.png"
@@ -31,7 +34,20 @@ export default function Portfolio() {
             <section className="portfolio-section">
 
                 <div className="portfolio-card">
-                    <a className="portfolio-title-link" href="https://videomontazh.online/" target="_blank" rel="noopener noreferrer">
+                    <a className="portfolio-title-link" href="https://www.aounicase.com.ua/" target="_blank" rel="noopener noreferrer">
+                        <Image className="portfolio-pic1" src={Aounicase1} alt="aounicase pic site" />
+                        <Image className="portfolio-pic2" src={Aounicase2} alt="aounicase pic site" />
+                        <div className="portfolio-title">
+                            <Image className="portfolio-logo" src={Gavellogo} alt="logo" height={20} />
+                            <h3 className="portfolio-h3">AO Unicase</h3>
+                        </div>
+                        <h4 className="portfolio-h4">Get legal help</h4>
+                    </a>
+                    <p className="portfolio-p">Unicase is a fast, adaptive web application built with Next.js, designed to provide comprehensive information about lawyers based in Kyiv, Ukraine. The site features a sleek and professional frontend, integrates Google Analytics for insights, and offers a seamless user experience as a Single Page Application (SPA) with Server-Side Rendering (SSR). Users can easily navigate the site to find legal help from professionals, explore an integrated map, and access all the necessary links and resources.</p>
+                </div>
+
+                <div className="portfolio-card">
+                    <a className="portfolio-title-link" href="https://videoeditor-one.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <Image className="portfolio-pic1" src={Videoeditor1} alt="Videoeditor pic site" />
                         <Image className="portfolio-pic2" src={Videoeditor2} alt="Videoeditor pic site" />
                         <div className="portfolio-title">
