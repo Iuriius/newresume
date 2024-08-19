@@ -13,7 +13,7 @@ import Node from "@/public/nodejs.png";
 import Javascript from "@/public/js.png";
 import Styledcomponents from "@/public/sc.png";
 import Redux from "@/public/redux.png";
-import Mobx from "@/public/mobx.png";
+import Angular from "@/public/angular.png";
 import Npm from "@/public/npm.png";
 import Html from "@/public/html.png";
 import Css from "@/public/css.png";
@@ -71,8 +71,8 @@ export default function Technologies() {
         </a>
         <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">
           <Image className="my-stack-pic" alt="pic" src={Redux} /></a>
-        <a href="https://mobx.js.org/" target="_blank" rel="noopener noreferrer">
-          <Image className="my-stack-pic" alt="pic" src={Mobx} />
+        <a href="https://angular.dev/" target="_blank" rel="noopener noreferrer">
+          <Image className="my-stack-pic" alt="pic" src={Angular} />
         </a>
         <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">
           <Image className="my-stack-pic" alt="pic" src={Node} />
