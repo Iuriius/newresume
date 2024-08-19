@@ -19,7 +19,7 @@ import Html from "@/public/html.png";
 import Css from "@/public/css.png";
 import Emotion from "@/public/emotion.png";
 import Figma from "@/public/figma.png";
-import Mui from "@/public/mui.png";
+import Mjml from "@/public/mjml.png";
 /*
 /**|======================================
 /**| code
@@ -63,8 +63,8 @@ export default function Technologies() {
         <a href="https://www.styled-components.com/" target="_blank" rel="noopener noreferrer">
           <Image className="my-stack-pic" alt="pic" src={Styledcomponents} />
         </a>
-        <a href="https://mui.com/" target="_blank" rel="noopener noreferrer">
-          <Image className="my-stack-pic" alt="pic" src={Mui} />
+        <a href="https://mjml.io/" target="_blank" rel="noopener noreferrer">
+          <Image className="my-stack-pic" alt="pic" src={Mjml} />
         </a>
         <a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">
           <Image className="my-stack-pic" alt="pic" src={Npm} />
