@@ -58,7 +58,7 @@ export default function Home() {
               alt="English certificate" />
             <h3 className="topskills-h3">TEFL credentials</h3> click to verify the certificate</a>
 
-          <a className="topskills-link" href="https://www.videomontazh.online"
+          <a className="topskills-link" href="https://videoeditor-one.vercel.app/"
             target="_blank" rel="noopener noreferrer">
             <Image className="topskills-img-adobe"
               src={Adobe}
