@@ -14,7 +14,7 @@ export default function Contacts() {
                 <a className="contacts-link" href="tel:+380733216072"><ImPhone className="contacts-icon" />Give a call</a>
                 <a className="contacts-link" href="https://www.linkedin.com/in/iurii-kyrychenko-393706249/" target="_blank" rel="noopener noreferrer"><ImLinkedin className="contacts-icon" />My Linkedin</a>
                 <a className="contacts-link" href="https://goo.gl/maps/nYDgGF27xA3qAjKj8" target="_blank" rel="noopener noreferrer"><ImLocation className="contacts-icon" />Bila Tserkva, UA</a>
-                <a className="contacts-link" target="_blank" rel="noopener noreferrer" href="http://iurii.website"><TfiWorld className="contacts-icon" />www.iurii.website</a>
+                <a className="contacts-link" target="_blank" rel="noopener noreferrer" href="https://newresume-peach.vercel.app"><TfiWorld className="contacts-icon" />My Personal Page</a>
                 <Image className="contacts-bg"
                     src={Keyboard}
                     alt="background keyboard picture" />
