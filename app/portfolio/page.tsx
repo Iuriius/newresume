@@ -25,6 +25,9 @@ import Alexlogo from "@/public/AS watermark black.png"
 import Webstudio1 from "@/public/portfolio-webstudio.jpg"
 import Webstudio2 from "@/public/webstudio.jpg"
 import Webstudiologo from "@/public/weblogo.png"
+import Todo1 from "@/public/portfolio-todo.jpg"
+import Todo2 from "@/public/todo.jpg"
+import Todologo from "@/public/angular.png"
 
 
 export default function Portfolio() {
@@ -32,6 +35,19 @@ export default function Portfolio() {
         <>
             <h2 className="portfolio-h2">PORTFOLIO</h2>
             <section className="portfolio-section">
+
+                <div className="portfolio-card">
+                    <a className="portfolio-title-link" href="https://angulartodo-rho.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <Image className="portfolio-pic1" src={Todo1} alt="aounicase pic site" />
+                        <Image className="portfolio-pic2" src={Todo2} alt="aounicase pic site" />
+                        <div className="portfolio-title">
+                            <Image className="portfolio-logo" src={Todologo} alt="logo" height={20} />
+                            <h3 className="portfolio-h3">My Todo List</h3>
+                        </div>
+                        <h4 className="portfolio-h4">Powered by Angular 19</h4>
+                    </a>
+                    <p className="portfolio-p">My Todo List is a fast, adaptive simple Single Page Application (SPA) built with a TypeScript programming language using a Google Angular v19 framework. It is styled with Sass and deployed to Vercel, showcasing the new signals feature that allows users to easily add and delete tasks. The application emphasizes performance and responsiveness with standalone components, ensuring a seamless user experience across devices.</p>
+                </div>
 
                 <div className="portfolio-card">
                     <a className="portfolio-title-link" href="https://www.aounicase.com.ua/" target="_blank" rel="noopener noreferrer">
